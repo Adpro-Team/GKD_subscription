@@ -34,5 +34,21 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      key: 2,
+      name: '功能类-安装未知应用设置',
+      quickFind: true,
+      activityIds: 'com.android.packageinstaller.InstallStaging',
+      rules: [
+        {
+          key: 0,
+          matches: [
+            '[text*="禁止您的手机安装来自此来源的未知应用"]',
+            '[text="设置"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/14080242',
+        },
+      ],
+    },
   ],
 });
