@@ -1,6 +1,6 @@
 # 中国电信
 
-存在 5 规则组 - [com.ct.client](/src/apps/com.ct.client.ts)
+存在 6 规则组 - [com.ct.client](/src/apps/com.ct.client.ts)
 
 ## 用户引导
 
@@ -35,3 +35,11 @@
 默认禁用 - 自动点击关闭
 
 - [快照-0](https://i.gkd.li/import/13043522)
+
+## 功能类-领金豆
+
+默认禁用 - 点击右上角领金豆
+
+- [示例-0](https://m.gkd.li/57941037/fe4862c7-44ce-4d2f-9f3f-1621a373b075)
+
+- [快照-0](https://i.gkd.li/import/14121382)

@@ -207,5 +207,21 @@ export default defineAppConfig({
       rules: '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
       snapshotUrls: 'https://i.gkd.li/import/13800207',
     },
+    {
+      key: 16,
+      name: '功能类-申请开启小组件弹窗',
+      desc: '点击【暂不开启】',
+      rules: [
+        {
+          key: 0,
+          name: '搜索小组件',
+          quickFind: true,
+          activityIds:
+            'com.ss.android.ugc.aweme.search.activity.SearchResultActivity',
+          matches: '[text="开启搜索组件到桌面"] +2 [text="暂不开启"]',
+          snapshotUrls: 'https://i.gkd.li/import/14123300',
+        },
+      ],
+    },
   ],
 });

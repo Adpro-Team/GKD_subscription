@@ -70,5 +70,16 @@ export default defineAppConfig({
       rules: '@[text="暂不开启"] +2 [text="开启通知权限"]',
       snapshotUrls: 'https://i.gkd.li/import/13761671',
     },
+    {
+      key: 6,
+      name: '更新提示',
+      resetMatch: 'app',
+      actionMaximum: 1,
+      quickFind: true,
+      activityIds:
+        'com.gotokeep.keep.refactor.business.main.activity.MainActivity',
+      rules: '[text*="发现新版本"] +3 [text="暂不升级"]',
+      snapshotUrls: 'https://i.gkd.li/import/14124815',
+    },
   ],
 });

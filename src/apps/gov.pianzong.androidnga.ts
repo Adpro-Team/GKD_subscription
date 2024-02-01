@@ -33,24 +33,21 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '话题-帖子列表广告',
+      name: '局部广告-话题-帖子列表广告',
       desc: '点击卡片x按钮关闭广告',
       activityIds:
         'gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity',
       rules: [
         {
-          matches: 'Image[text="ams_icon_single_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/12655805'],
-        },
-        {
+          key: 0,
           matches:
-            'TextView[text!=null] - ImageView < LinearLayout[childCount=2] + FrameLayout[childCount=1] > ImageView[id=null]',
-          snapshotUrls: ['https://i.gkd.li/import/12706140'],
-        },
-        {
-          matches:
-            '[text="广告"] - [id="gov.pianzong.androidnga:id/iv_information_ad_close"]',
-          snapshotUrls: ['https://i.gkd.li/import/13303236'],
+            '[id="gov.pianzong.androidnga:id/rv_post_list"] > FrameLayout *[childCount<=4] > [text!="" && text!=null] +(1,2) *[childCount<=3 && childCount!=2] > @[name*="Image" || name*="TextView"][text!=""][index=0 || index>1][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12655805',
+            'https://i.gkd.li/import/12706140',
+            'https://i.gkd.li/import/13303236',
+            'https://i.gkd.li/import/14123759',
+          ],
         },
       ],
     },

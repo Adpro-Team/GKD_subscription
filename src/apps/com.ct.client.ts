@@ -69,5 +69,16 @@ export default defineAppConfig({
       rules: 'ImageView[id="com.ct.client:id/msg_close"]',
       snapshotUrls: ['https://i.gkd.li/import/13043522'],
     },
+    {
+      key: 6,
+      name: '功能类-领金豆',
+      desc: '点击右上角领金豆',
+      quickFind: true,
+      activityIds: 'com.ct.client.common.ConfirmDialogActivity',
+      rules: '[id="com.ct.client:id/ivSign"]',
+      exampleUrls:
+        'https://m.gkd.li/57941037/fe4862c7-44ce-4d2f-9f3f-1621a373b075',
+      snapshotUrls: 'https://i.gkd.li/import/14121382',
+    },
   ],
 });

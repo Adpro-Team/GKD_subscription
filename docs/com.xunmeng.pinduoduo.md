@@ -1,13 +1,21 @@
 # 拼多多
 
-存在 12 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
+存在 13 规则组 - [com.xunmeng.pinduoduo](/src/apps/com.xunmeng.pinduoduo.ts)
 
-## 更新弹窗
+## 更新提示
 
 默认禁用
 
 - [快照-0](https://i.gkd.li/import/12642017)
 - [快照-1](https://i.gkd.li/import/13195645)
+
+## 通知提示
+
+默认禁用
+
+- [示例-0](https://m.gkd.li/101449500/ec8e953e-06d3-4883-9c9a-11410f1b1336)
+
+- [快照-0](https://i.gkd.li/import/14109435)
 
 ## 首页优惠弹窗
 

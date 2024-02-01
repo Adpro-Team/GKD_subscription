@@ -3,6 +3,7 @@ import { defineAppConfig } from '../types';
 export default defineAppConfig({
   id: 'com.chunqiu.ah',
   name: 'AH视频',
+  deprecatedKeys: [5],
   groups: [
     {
       key: 0,
@@ -27,13 +28,18 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '全屏广告-弹窗广告',
+      name: '全屏广告-首页-弹窗广告',
       quickFind: true,
       activityIds: 'com.androlua.LuaActivity',
       rules: [
         {
-          matches: '@FrameLayout - FrameLayout >2 [text="京东"]',
-          snapshotUrls: 'https://i.gkd.li/import/13264383',
+          key: 0,
+          matches:
+            '@ImageView < * <2 FrameLayout[childCount=5] <<n [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13264383',
+            'https://i.gkd.li/import/14122595',
+          ],
         },
       ],
     },
@@ -75,20 +81,6 @@ export default defineAppConfig({
           activityIds: 'com.androlua.LuaActivity',
           matches: '[id="com.chunqiu.ah:id/buttonPanel"] [text="不再提示"]',
           snapshotUrls: 'https://i.gkd.li/import/13852447',
-        },
-      ],
-    },
-    {
-      key: 5,
-      quickFind: true,
-      name: '全屏广告-首页广告弹窗',
-      desc: '点击X',
-      rules: [
-        {
-          activityIds: 'com.androlua.LuaActivity',
-          matches:
-            '@ImageView[visibleToUser=true] < * +3 * > [text="查看详情"]',
-          snapshotUrls: 'https://i.gkd.li/import/13852448',
         },
       ],
     },
