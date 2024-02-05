@@ -9,11 +9,12 @@ export default defineAppConfig({
       key: 10,
       quickFind: true,
       name: '开屏广告',
-      activityIds: 'com.pwrd.steam.esports.ui.activity.launcher.AdvertisementActivity',
+      activityIds:
+        'com.pwrd.steam.esports.ui.activity.launcher.AdvertisementActivity',
       rules: '[id="com.pwrd.steam.esports:id/tv_advertisement_timer"]',
       snapshotUrls: [
         'https://i.gkd.li/import/14166171', //开屏广告跳过按钮
-      ]
-    }
-  ]
+      ],
+    },
+  ],
 });
