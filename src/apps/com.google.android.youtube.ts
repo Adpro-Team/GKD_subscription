@@ -2,11 +2,11 @@ import { defineAppConfig } from '../types';
 
 export default defineAppConfig({
   id: 'com.google.android.youtube',
-  name: 'youtube',
+  name: 'YouTube',
   groups: [
     {
       key: 0,
-      name: '视频播放-跳过广告',
+      name: '局部广告-视频播放页-贴片广告',
       activityIds: [
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
         'com.google.android.apps.youtube.app.watchwhile.MainActivity',
@@ -33,7 +33,7 @@ export default defineAppConfig({
     },
     {
       key: 1,
-      name: '视频播放-赞助商广告',
+      name: '局部广告-视频播放页-赞助商广告',
       activityIds:
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
       rules:
@@ -46,7 +46,7 @@ export default defineAppConfig({
     },
     {
       key: 2,
-      name: '首页-会员广告',
+      name: '局部广告-首页-赞助商广告',
       activityIds:
         'com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity',
       rules:
@@ -55,12 +55,21 @@ export default defineAppConfig({
     },
     {
       key: 3,
-      name: '订阅浮窗广告',
+      name: '局部广告-订阅YouTube Premium浮窗广告',
       activityIds:
         'com.google.android.apps.youtube.app.watchwhile.MainActivity',
       rules:
         'ViewGroup[desc="免费试用 1 个月"] < * - * > ViewGroup[text="不用了，谢谢"]', // 缺少英文快照
       snapshotUrls: 'https://i.gkd.li/import/13797512',
+    },
+    {
+      key: 4,
+      name: '通知提示-开启推送通知提示弹窗',
+      quickFind: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: '[text="开启通知"] < * < * +2 * >2 [text="不用了"]',
+      snapshotUrls: 'https://i.gkd.li/import/14194155',
     },
   ],
 });
