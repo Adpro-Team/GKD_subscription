@@ -5,6 +5,21 @@ export default defineAppConfig({
   name: 'miui系统广告',
   groups: [
     {
+      name: '开屏广告',
+      desc: '点击【跳过广告】',
+      key: 0,
+      rules: [
+        {
+          matches: ['[id="com.miui.systemAdSolution:id/view_skip_button"]'],
+          quickFind: true,
+          snapshotUrls: ['https://i.gkd.li/i/14580266'],
+          exampleUrls: [
+            'https://m.gkd.li/81077248/c3d69e13-c48c-4ab2-95c8-9e0223c29505',
+          ],
+        },
+      ],
+    },
+    {
       key: 1,
       name: 'miui-为什么不希望看到这条推广',
       desc: '点击【不感兴趣】',
