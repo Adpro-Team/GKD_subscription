@@ -24,7 +24,7 @@
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
     "@commitlint/types": "^19.0.3",
-    "@gkd-kit/api": "^0.0.4",
+    "@gkd-kit/api": "^0.0.5",
     "@gkd-kit/selector": "0.0.25",
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.11.30",
