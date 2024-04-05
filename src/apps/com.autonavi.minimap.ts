@@ -37,6 +37,7 @@ export default defineAppConfig({
         {
           key: 0,
           action: 'clickCenter',
+          excludeMatches: '[desc="返回"] + View[text^=""]',
           matches:
             'ViewGroup >(1,4) ViewGroup[childCount>=2 && childCount<=4] > ViewGroup + @ViewGroup[childCount=1][visibleToUser=true][clickable=true] > ImageView[desc=null || desc="关闭"][clickable=false]',
           exampleUrls: [
@@ -50,6 +51,7 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14730915',
             'https://i.gkd.li/i/14784970',
             'https://i.gkd.li/i/14886366', // 误触，https://github.com/Adpro-Team/GKD_subscription/issues/98
+            'https://i.gkd.li/i/14886929', // 误触，使用 excludeMatches 修复
           ],
         },
       ],
