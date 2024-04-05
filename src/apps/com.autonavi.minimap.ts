@@ -38,7 +38,7 @@ export default defineAppConfig({
           key: 0,
           action: 'clickCenter',
           matches:
-            'View[text!="" && text!=null] <(1,2) ViewGroup[childCount=2 || childCount=3] <<n ViewGroup >(1,2) [text!="查看更多"] + @ViewGroup[index!=0][childCount=1][visibleToUser=true][clickable=true] > ImageView',
+            'ViewGroup >(1,4) ViewGroup[childCount>=2 && childCount<=4] > ViewGroup + @ViewGroup[childCount=1][visibleToUser=true][clickable=true] > ImageView[desc=null || desc="关闭"][clickable=false]',
           exampleUrls: [
             'https://m.gkd.li/101449500/9a0ef511-4acc-4a7e-9c25-e9384662b3d1',
             'https://m.gkd.li/101449500/57d378eb-334c-4552-81f7-f7393a92412b',
@@ -49,6 +49,7 @@ export default defineAppConfig({
             'https://i.gkd.li/i/14730914',
             'https://i.gkd.li/i/14730915',
             'https://i.gkd.li/i/14784970',
+            'https://i.gkd.li/i/14886366', // 误触，https://github.com/Adpro-Team/GKD_subscription/issues/98
           ],
         },
       ],
