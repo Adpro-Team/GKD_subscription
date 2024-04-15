@@ -24,8 +24,8 @@ devDependencies:
     specifier: ^0.0.5
     version: 0.0.5
   '@gkd-kit/define':
-    specifier: ^0.0.0
-    version: 0.0.0(@gkd-kit/api@0.0.5)
+    specifier: ^0.0.1
+    version: 0.0.1(@gkd-kit/api@0.0.5)
   '@gkd-kit/selector':
     specifier: 0.0.25
     version: 0.0.25
@@ -522,8 +522,8 @@ packages:
     resolution: {integrity: sha512-eKHkqcjlhUiQgg1WUepq7CNxVR/Q3PQWr8TMmfbYTqeq0pO7ABYNDuGkOptR+u2jQ1Qr+8bbX/ODfdB6jK8UfQ==}
     dev: true
 
-  /@gkd-kit/define@0.0.0(@gkd-kit/api@0.0.5):
-    resolution: {integrity: sha512-uZ81ARF7aoGSA168a+MK27UgC4kw46NiXLGLYQ0ZWR0QcRsnzW/o5Z/MJ7qsfr5j0r8qYBadBQ61OZCoxhEgnw==}
+  /@gkd-kit/define@0.0.1(@gkd-kit/api@0.0.5):
+    resolution: {integrity: sha512-ql/f0TIlBQOSaJS6e9c8B4rLHYWyCzDctP0vRpc6aYaWGJXnZKZIbuTUr2ET45eNzD4dviCjTU6cSv/wcA07IQ==}
     peerDependencies:
       '@gkd-kit/api': '*'
     dependencies:
