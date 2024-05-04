@@ -133,11 +133,12 @@ export default defineGkdApp({
       desc: '点击X',
       rules: [
         {
-          activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
+          activityIds:
+            'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
           matches: 'View[clickable=true][desc="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/15209764',
         },
-      ]
-    }
+      ],
+    },
   ],
 });
