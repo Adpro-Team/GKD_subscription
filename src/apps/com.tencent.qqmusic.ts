@@ -127,5 +127,17 @@ export default defineGkdApp({
       rules: '@[desc="关闭按钮"] <n * > [desc^="看广告"]',
       snapshotUrls: 'https://i.gkd.li/i/13806773',
     },
+    {
+      key: 9,
+      name: '全屏广告-试听开通VIP弹框',
+      desc: '点击X',
+      rules: [
+        {
+          activityIds: 'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
+          matches: 'View[clickable=true][desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/15209764',
+        },
+      ]
+    }
   ],
 });
