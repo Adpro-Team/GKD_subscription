@@ -256,8 +256,8 @@ export default defineGkdApp({
             'https://i.gkd.li/i/15219142',
             'https://i.gkd.li/i/15220560',
           ],
-        }
-      ]
+        },
+      ],
     },
   ],
 });
