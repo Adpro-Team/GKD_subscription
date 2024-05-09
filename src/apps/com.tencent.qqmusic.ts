@@ -143,8 +143,11 @@ export default defineGkdApp({
           activityIds:
             'com.tencent.qqmusic.activity.TranslucentWebViewActivity',
           matches:
-            '@View[clickable=true][desc="关闭"] + * > [text^="正在试听"]',
-          snapshotUrls: 'https://i.gkd.li/i/15209764',
+            '@[desc="关闭"][clickable=true][visibleToUser=true] + * > [text^="正在试听" || text$="到期"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/15209764',
+            'https://i.gkd.li/i/15261116',
+          ],
         },
       ],
     },
