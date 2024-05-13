@@ -244,17 +244,20 @@ export default defineGkdApp({
         {
           key: 0,
           actionMaximum: 1,
-          forcedTime: 2000,
+          forcedTime: 5000,
           quickFind: true,
           activityIds: [
             'com.bilibili.vip.web.VipWebActivity',
             'tv.danmaku.bili.MainActivityV2',
           ],
-          matches:
+          matches: [
             '@TextView[visibleToUser=true] < * <2 * -2 [text="大会员服务协议"] <<n [vid="webview"]',
+            '@TextView[visibleToUser=true] <2 * <2 * -2 [text="大会员服务协议"] <<n [vid="webview"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/15219142',
             'https://i.gkd.li/i/15220560',
+            'https://i.gkd.li/i/15289942',
           ],
         },
       ],
