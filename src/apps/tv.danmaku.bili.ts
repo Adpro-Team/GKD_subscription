@@ -251,17 +251,17 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
+            '@TextView[visibleToUser=true] <2 * <2 * -2 [text="大会员服务协议"] <<n [vid="webview"]',
+          snapshotUrls: 'https://i.gkd.li/i/15289942',
+        },
+        {
+          key: 1,
+          matches:
             '@TextView[visibleToUser=true] < * <2 * -2 [text="大会员服务协议"] <<n [vid="webview"]',
           snapshotUrls: [
             'https://i.gkd.li/i/15219142',
             'https://i.gkd.li/i/15220560',
           ],
-        },
-        {
-          key: 1,
-          matches:
-            '@TextView[visibleToUser=true] <2 * <2 * -2 [text="大会员服务协议"] <<n [vid="webview"]',
-          snapshotUrls: 'https://i.gkd.li/i/15289942',
         },
       ],
     },
