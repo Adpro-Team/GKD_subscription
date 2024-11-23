@@ -58,7 +58,7 @@
     "@gkd-kit/tools": "0.5.2",
     "@types/eslint__js": "8.42.3",
     "@types/node": "22.9.3",
-    "eslint": "9.13.0",
+    "eslint": "9.15.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-unused-imports": "4.1.4",
     "json5": "2.2.3",
