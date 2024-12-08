@@ -5,19 +5,16 @@ export default defineGkdApp({
   name: '悦通行',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      desc: '字节广告SDK',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
+      key: 1,
+      name: '功能类-扫码成功点击【确认并解锁】',
       rules: [
-        '[id$="tt_splash_skip_btn"]',
-        '@View[clickable=true][id=null][visibleToUser=true] +n TextView[clickable=true]',
-      ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/13239194',
-        'https://i.gkd.li/i/13723967',
+        {
+          fastQuery: true,
+          activityIds: 'com.wwwscn.yuexingbao.ui.qrcode.ScanResultActivity',
+          matches: '[text="扫码成功"] + [vid="btn_open_net"]',
+          exampleUrls: 'https://e.gkd.li/01d5e4a9-7f70-4d43-ba51-a99c4a1c3d1e',
+          snapshotUrls: 'https://i.gkd.li/i/18048927',
+        },
       ],
     },
   ],

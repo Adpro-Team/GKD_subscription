@@ -78,8 +78,50 @@ export const blackListAppIDs: string[] = [
   'com.openai.chatgpt', // ChatGPT
   'org.telegram.group', // Turrit
   'com.android.chrome', // Chrome
+  'org.mozilla.firefox', // Firefox
+  'org.mozilla.firefox_beta', // Firefox Beta
+  'org.mozilla.fenix', // Firefox Nightly
+  'org.mozilla.focus', // Firefox Focus
   'com.google.android.youtube', // YouTube 开屏广告在 https://i.gkd.li/i/15765176 误触
   'com.xunmeng.pinduoduo', // 拼多多
+  'com.byyoung.setting', //爱玩机工具箱
+  'com.mixplorer', // MiX文件管理器
+  'com.xjs.ehviewer', // Ehviewer
+  'rikka.appops', // App Ops
+  'com.vrem.wifianalyzer', // WiFiAnalyzer
+  'remix.myplayer', // APlayer
+  'com.arn.scrobble', // Pano Scrobbler
+  'org.videolan.vlc', // VLC
+  'org.geogebra.android.calculator.suite', // GeoGebra
+  'com.azure.authenticator', // Microsoft Authenticator
+  'com.microsoft.office.officehub', // Microsoft Office
+  'com.microsoft.office.officehubrow', // Microsoft Office (Google Play版)
+  'com.microsoft.office.outlook', // Microsoft Outlook
+  'com.microsoft.office.onenote', // Microsoft OneNote
+  'com.sonkins.tguitar', // Guitar Tuner
+  'com.eumlab.android.prometronome', // Pro Metronome
+  'cn.edu.buaa.wxwork', // 智慧北航
+  'io.github.muntashirakon.AppManager', // App Manager
+  'moe.shizuku.redirectstorage', // 存储空间隔离
+  'web1n.stopapp', // 小黑屋
+  'com.shatyuka.zhiliao', // 知了
+  'com.adobe.reader', // Adobe Acrobat
+  'org.wikipedia', // 维基百科
+  'org.kiwix.kiwixmobile', // Kiwix
+  'com.brakefield.painter', // Infinte Painter
+  'me.iacn.biliroaming', // 哔哩漫游
+  'com.termux', // Termux
+  'oss.krtirtho.spotube', // Spotube
+  'com.merxury.blocker', // Blocker
+  'moe.minamigo.miuigms', // MIUIGMS
+  'mufanc.tools.applock', // AppLock
+  'com.gankes.tsbattery', // TSBattery
+  'com.oasisfeng.nevo.xposed', // 女娲石
+  'com.reddit.frontpage', // Reddit
+  'com.ghostflying.locationreportenabler', // LocationReportEnabler
+  'com.zyc.zcontrol', // ZControl
+  'org.nobody.multitts', // MultiTTS
+  'deltazero.amarok', // Amarok 更新提示在 https://i.gkd.li/i/17812411 误触
 
   'com.canghai.haoka',
   'com.xy.td',
@@ -88,7 +130,6 @@ export const blackListAppIDs: string[] = [
   'io.github.huskydg.magisk',
   'xzr.konabess',
   'org.lsposed.manager',
-  'com.microsoft.office.officehub',
   'bin.mt.plus',
   'tw.nekomimi.nekogram',
   'io.github.qauxv',
@@ -101,6 +142,50 @@ export const blackListAppIDs: string[] = [
   'com.tsng.hidemyapplist',
   'com.pittvandewitt.wavelet',
   'one.yufz.onebox',
+  'com.Wecrane.Scar.pubg',
+  'me.bmax.apatch',
+  'com.tubevpn.client',
+  'github.tornaco.android.thanos.pro',
+  'com.omarea.vtools',
+  'com.litebyte.samhelper',
+  'com.nurke.perfectone',
+  'qlenlen.OneDesign',
+  'icu.nullptr.nativetest',
+  'io.github.vvb2060.mahoshojo',
+  'com.samsung.android.memoryguardian',
+  'com.music.khkj',
+  'Hook.JiuWu.Xp',
+  'me.weishu.kernelsu',
+  'com.franco.kernel',
+  'com.samsung.android.themedesigner',
+  'com.samsung.android.game.gamehome',
+  'com.tencent.tmgp.sgame',
+  'com.yangyanghuzhou.heijuan',
+  'com.sec.android.app.sbrowser',
+  'com.samsung.android.game.gamelab',
+  'com.Twilight.tools',
+  'com.miui.securitymanager',
+  'com.google.android.documentsui',
+  'com.android.settings',
+  'com.miui.creation',
+  'com.xiaomi.scanner',
+  'com.miui.gallery',
+  'com.yozo.office',
+  'com.miui.video',
+  'com.xiaomi.wpslauncher',
+  'com.sevtinge.hyperceiler',
+  'com.dna.tools',
+  'flar2.devcheck',
+  'com.gstarmc.android',
+  'com.github.capntrips.kernelflasher',
+  'com.google.android.googlequicksearchbox',
+  'qyz.onedesign',
+  'com.samsung.android.app.repaircal',
+  'com.yhchat.app',
+  'com.skyhand.sinahelper',
+  'com.rong862.bear',
+  'be.mygod.vpnhotspot',
+  'com.samsung.android.bixby.agent',
 
   // 系统自带非系统应用
   // 小米
@@ -119,8 +204,13 @@ export const blackListAppIDs: string[] = [
   'com.miui.compass', // 指南针
   'com.duokan.phone.remotecontroller', // 万能遥控
   'com.mfashiongallery.emag', // 小米画报
+  'com.miui.thirdappassistant', // 三方应用异常分析
+  'com.xiaomi.wpslauncher', // WPS Office PC
+  'com.xiaomi.cajlauncher', // CAJViewer PC
+  'com.mi.car.padapp', // 小米汽车扩展屏
+  'com.android.calendar', // 日历
 
-  //三星
+  // 三星
   'com.samsung.android.app.cameraassistant',
   'com.samsung.android.app.galaxyraw',
   'com.samsung.android.appbooster',
@@ -164,6 +254,7 @@ function filterAppsByGroup(apps: RawApp[], groupNamePrefix: string): string[] {
 export const openAdBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'com.taptap', // TapTap
+  'com.sankuai.meituan', // 美团 误触 https://i.gkd.li/i/17827264
   ...filterAppsByGroup(apps, '开屏广告'),
 ]);
 
@@ -175,7 +266,7 @@ export const updateBlackListAppIDs = new Set([
 ]);
 
 // 青少年模式黑名单
-export const yongBlackListAppIDs = new Set([
+export const youthBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'xxx.pornhub.fuck', // JavDB
   'com.netease.cloudmusic', // 网易云音乐 全局规则在 https://i.gkd.li/i/14931708 误触
@@ -192,17 +283,18 @@ export const whiteListAppIDs: string[] = [];
 // 开屏广告白名单
 export const openAdWhiteListAppIDs = new Set([
   ...whiteListAppIDs,
-  'com.bbk.theme', // i 主题
   'com.bbk.appstore', // vivo应用商店
   'com.miui.player', // 小米音乐
   'com.tencent.southpole.appstore', // 黑鲨应用市场
-  'com.vivo.space', // vivo 官网
   'com.heytap.browser', // 一加浏览器
   'com.heytap.themestore', // oppo主题商店
 ]);
 
 // 更新提示白名单
-export const updateWhiteListAppIDs = new Set([...whiteListAppIDs]);
+export const updateWhiteListAppIDs = new Set([
+  ...whiteListAppIDs,
+  'com.hihonor.phoneservice', // 我的荣耀
+]);
 
 // 青少年模式白名单
-export const yongWhiteListAppIDs = new Set([...whiteListAppIDs]);
+export const youthWhiteListAppIDs = new Set([...whiteListAppIDs]);

@@ -22,6 +22,13 @@ export default defineGkdApp({
           matches: '@ImageView <<n ViewGroup +2 ViewGroup >n [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/14142578',
         },
+        {
+          key: 2,
+          activityIds:
+            'com.sigmob.sdk.base.common.PortraitTransparentAdActivity',
+          matches: '[id="ad_area"] >2 [id="close_btn"]',
+          snapshotUrls: 'https://i.gkd.li/i/18050212',
+        },
       ],
     },
   ],

@@ -671,6 +671,16 @@ const appDeprecatedKeys: RawDeprecatedKeysSetting[] = [
     name: '暮瑟',
     deprecatedKeys: [4],
   },
+  {
+    id: 'cn.lezhi.speedtest',
+    name: '网速管家',
+    deprecatedKeys: [0],
+  },
+  {
+    id: 'com.wwwscn.yuexingbao',
+    name: '悦通行',
+    deprecatedKeys: [0],
+  },
 ];
 
 const map: Map<string, number[]> = new Map();

@@ -6,16 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '卡片式广告',
-      activityIds: [
-        'com.github.eprendre.tingshu.ui.search.AggregateSearchActivity',
-        'com.github.eprendre.tingshu.ui.play.PlayerActivity',
-      ],
+      name: '综合广告-卡片式广告',
       rules: [
         {
           key: 0,
-          name: '搜索结果底部/播放页面广告卡片',
-          activityIds: 'com.github.eprendre.tingshu.ui.play.PlayerActivity',
+          name: '局部广告',
+          activityIds: [
+            'com.github.eprendre.tingshu.ui.search.AggregateSearchActivity',
+            'com.github.eprendre.tingshu.ui.play.PlayerActivity',
+          ],
           matches:
             'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
           snapshotUrls: [
@@ -24,11 +23,29 @@ export default defineGkdApp({
             'https://i.gkd.li/i/13446735',
           ],
         },
+        {
+          key: 1,
+          name: '分段广告-1',
+          fastQuery: true,
+          activityIds: 'com.github.eprendre.tingshu.ui.play.PlayerActivity',
+          matches: '@[desc="close"] <<n [vid="ad_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/18048890',
+        },
+        {
+          key: 2,
+          preKeys: 1,
+          name: '分段广告-2',
+          fastQuery: true,
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Activity_T',
+          matches: '@* > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/18048901',
+        },
       ],
     },
     {
       key: 2,
-      name: '弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
